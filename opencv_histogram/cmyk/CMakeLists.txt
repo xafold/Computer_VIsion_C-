@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.27.7)
+project(cmyk)
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 17)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(cmyk cmyk.cpp)
+target_link_libraries( cmyk ${OpenCV_LIBS} )

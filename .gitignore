@@ -1,0 +1,5 @@
+.vscode/*
+Cmake_compile/build/
+opencv_histogram/rgb/build/
+**/build/
+fast_api_tutorial/__pycache__/

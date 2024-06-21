@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.27.7)
+project(edge_detection)
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 17)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(edge_detect edge_detect.cpp)
+target_link_libraries( edge_detect ${OpenCV_LIBS} )
